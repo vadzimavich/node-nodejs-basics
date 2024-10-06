@@ -2,8 +2,8 @@ import { promises } from 'fs';
 import { constants } from 'fs';
 
 const rename = async () => {
-  const oldFile = './src/fs/files/wrongFilename.txt';
-  const newFile = './src/fs/files/properFilename.md';
+  const oldFile = 'fs/files/wrongFilename.txt';
+  const newFile = 'fs/files/properFilename.md';
 
   // src file check
   try {

@@ -10,10 +10,10 @@ const random = Math.random();
 let unknownObject; 
 
 if (random > 0.5) {
-  const data = await readFile('./src/modules/files/a.json', 'utf-8');
+  const data = await readFile('modules/files/a.json', 'utf-8');
   unknownObject = JSON.parse(data);
 } else {
-  const data = await readFile('./src/modules/files/b.json', 'utf-8');
+  const data = await readFile('modules/files/b.json', 'utf-8');
   unknownObject = JSON.parse(data);
 }
 

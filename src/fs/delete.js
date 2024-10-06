@@ -2,7 +2,7 @@ import { access, rm } from 'fs/promises';
 import { constants } from 'fs';
 
 const remove = async () => {
-  const filePath = './src/fs/files/fileToRemove.txt';
+  const filePath = 'fs/files/fileToRemove.txt';
 
   try {
     await access(filePath, constants.F_OK);

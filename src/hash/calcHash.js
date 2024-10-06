@@ -2,7 +2,7 @@ import { createReadStream } from 'fs';
 import { createHash } from 'crypto';
 
 const calculateHash = async () => {
-  const filePath = './src/hash/files/fileToCalculateHashFor.txt';
+  const filePath = 'hash/files/fileToCalculateHashFor.txt';
   const hash = createHash('sha256');
   const readStream = createReadStream(filePath);
 

@@ -2,7 +2,7 @@ import { createReadStream } from 'fs';
 import { pipeline } from 'stream';
 
 const read = async () => {
-  const filePath = './src/streams/files/fileToRead.txt';
+  const filePath = 'streams/files/fileToRead.txt';
   const readStream = createReadStream(filePath, { encoding: 'utf-8' });
 
   pipeline(readStream, process.stdout, (err) => {

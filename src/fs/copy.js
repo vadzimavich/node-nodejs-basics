@@ -2,8 +2,8 @@ import { access, cp } from 'fs/promises';
 import { constants } from 'fs';
 
 const copy = async () => {
-  const srcFolder = './src/fs/files';
-  const destFolder = './src/fs/files_copy';
+  const srcFolder = 'fs/files';
+  const destFolder = 'fs/files_copy';
 
   try {
     await access(srcFolder, constants.F_OK);

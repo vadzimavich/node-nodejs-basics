@@ -2,7 +2,7 @@ import { access, readFile } from 'fs/promises';
 import { constants } from 'fs';
 
 const read = async () => {
-  const filePath = './src/fs/files/fileToRead.txt';
+  const filePath = 'fs/files/fileToRead.txt';
 
   try {
     await access(filePath, constants.f_OK);
